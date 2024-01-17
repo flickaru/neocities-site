@@ -1,0 +1,20 @@
+
+.bliss {
+    display: flex;
+}
+
+
+.buttons {
+    color: white;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%); /* move object */ 
+    background-color: rgba(0, 0, 0, 0.466);
+    padding: 150px; /* make a seperate space using a box */
+}
+
+body {
+    font-family: Verdana;
+}
