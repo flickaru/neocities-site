@@ -1,0 +1,122 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+   body {
+    background-color:#b0e0e6;
+    font-family: notosans;
+    overflow: hidden;
+
+  }
+  
+  @font-face {
+      font-family: 'Team401';
+      src: url('fonts/team401.ttf'), url('fonts/team401.ttf.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Budmo';
+    src: url(fonts/BudmoJigglish.woff2) format("opentype");
+  }
+
+  @font-face {
+    font-family: 'notosans';
+    src: url('fonts/notosans.ttf'), url('fonts/notosans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Pacifico';
+    src: url('fonts/Pacifico.ttf'), url('fonts/Pacifico.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+  .huge-header {
+    color: #8a2be2;
+    text-align: center;
+    font-family: 'Team401';
+    font-size: 1.6em;
+  }
+  
+  iframe {
+    border:2px;
+    width:20%
+  }
+  
+  .sidenav {
+    height: 100%; /* Full height to cover everything */
+    width:160px;
+    position: fixed; /* Fixed position even on scroll */
+    z-index:1; /* stay on the top */
+    top:0; /* stay at the top */
+    left: 0; /* location=left side */
+    background: #2f4f4f; /* Black background sidebar */
+    overflow-x: hidden; /* Disable horizontal scrolling */
+    padding-top: 20px;
+  }
+  
+  /* Navigation menu links customisation */
+  .sidenav a {
+    padding: 6px 8px 6px 16px; /* Link seperation */
+    text-decoration: none;
+    font-size: 25px;
+    color: #00aeff;
+    font-size: 3em;
+    display: block; /* ? */
+    font-family: 'Budmo';
+  }
+  
+  
+  .marquee {
+    width: 1900px;
+    background-color: yellow;
+    color: black;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  .marquee p {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
+    text-transform: uppercase;
+  }
+  @keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+  }
+
+.content-box {
+    overflow-y: scroll;
+    box-sizing: border-box;
+    font-family: notosans;
+    color: #ffffff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -30%); /* move object */ 
+    background-color: #7a7ab9;
+    padding: 200px;
+    width: calc(100% -60px);
+    height: 100vh;
+}
+
+.content-box h1{
+    color: white;
+    transform: translate(25%, -50%)
+}
+
+iframe {
+  position: absolute;
+  transform: translate(385%, 30%);
+}
+
+.flag {
+  position: absolute;
+  transform: translate(250%, 80%);
+}
